@@ -24,30 +24,39 @@ body{
   border-radius: 10px;
   box-shadow: -23px 4px 50px rgba(0, 0, 0, 0.08);
   /* margin-left: 50px; */
-  transition: 0.3s ease-out;
+  transition: 0.4s ease-in;
   padding: 45px;
   padding-right: 0;
   transform: translate3d(60px, 0px, 0px);
 }
 
 .card:not(:first-child) {
-    margin-left: -4rem;
+  transition: 0.4s ease-in;
+    margin-left: -6rem;
     transform: translate3d(70px, 0px, 0px);
     background-color: #FDFDFD;
+}
+.card:nth-child(5){
+  margin-left: -2rem;
+
+}
+.card:nth-child(7){
+  margin-left: 0rem;
+
 }
 .card img{
   display: inline;
 }
-.card:hover {
+/* .card:hover {
   transform: translateX(-20px);
   
-}
+} */
 
 .card:hover ~ .card,
 .card:focus-within ~ .card{
   position: relative;
   left: 55px;
-  transition: 0.4s ease-out;
+  transition: 0.4s ease-in;
  
 }
 
@@ -84,7 +93,7 @@ button {
   border-radius:50%;
 }
 .container {
-  width: 1570px !important;
+  width: 1635px !important;
 }
 .slick-track {
   display: flex !important;
